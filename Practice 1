@@ -1,0 +1,23 @@
+function fizzBuzz() {
+    let n = Math.floor(Math.random() * 100)
+        if (n % 3 === 0) {
+            console.log('Fizz');
+            return
+        }
+        else if (n % 5 === 0) {
+            console.log('Buzz');
+            return
+        }
+        else if (n % 3 === 0 && n % 5 === 0) {
+            console.log('FizzBuzz');
+            return
+        }
+        else if (!n % 3 === 0 || !n % 5 === 0) {
+            console.log(n);
+            return
+        }
+        else {
+            console.log('Error');
+            return
+        }
+}
